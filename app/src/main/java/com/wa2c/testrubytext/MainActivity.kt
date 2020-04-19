@@ -151,7 +151,7 @@ class MainActivity : AppCompatActivity() {
         })
 
         me.weilunli.views.RubyTextView(this).also {
-            it.combinedText = "Android|アンドロイド は、 Google|グーグル が 開発|かいはつ した 携帯汎用|けいたいはんよう オペレーティングシステムである。{\uD83D\uDE4F;ありがとう}{\uD83D\uDC4F;ぱちぱちぱち}"
+            it.combinedText = "Android|アンドロイド は、 Google|グーグル が 開発|かいはつ した 携帯汎用|けいたいはんよう オペレーティングシステムである。"
             base.addView(it)
         }
 

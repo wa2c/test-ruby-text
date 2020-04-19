@@ -42,6 +42,11 @@ class MainActivity : AppCompatActivity() {
             base.addView(it)
         }
 
+        se.fekete.furiganatextview.furiganaview.FuriganaTextView(this).also {
+            it.setFuriganaText("　<ruby>\uD83D\uDC4F<rt>ぱちぱちぱち</rt></ruby><ruby>\uD83D\uDC4F<rt>ぱちぱちぱち</rt></ruby>", true)
+            base.addView(it)
+        }
+
         // FuriganaView ( guentoan / FuriganaView )
         // https://github.com/guentoan/FuriganaView
 
@@ -65,6 +70,11 @@ class MainActivity : AppCompatActivity() {
             base.addView(it)
         }
 
+        com.akira.nguyen.furigana.widget.FuriganaView(this).also {
+            it.setJText("　{\uD83D\uDC4F;ぱちぱちぱち}{\uD83D\uDC4F;ぱちぱちぱち}")
+            base.addView(it)
+        }
+
         // FuriganaView ( Vexu / Furigana-TextView )
         // https://github.com/Vexu/Furigana-TextView
 
@@ -84,6 +94,11 @@ class MainActivity : AppCompatActivity() {
         }
         com.wa2c.testrubytext.FuriganaView(this).also {
             it.setText("{あ;あいうえお}{あ;あいうえお}{あ;あいうえお}{あ;あいうえお}{あ;あいうえお}{あ;あいうえお}{あ;あいうえお}{あ;あいうえお}{あ;あいうえお}{あ;あいうえお}{あ;あいうえお}{あ;あいうえお}{あ;あいうえお}{あ;あいうえお}")
+            base.addView(it)
+        }
+
+        com.wa2c.testrubytext.FuriganaView(this).also {
+            it.setText("　{\uD83D\uDC4F;ぱちぱちぱち}{\uD83D\uDC4F;ぱちぱちぱち}")
             base.addView(it)
         }
 
@@ -119,6 +134,14 @@ class MainActivity : AppCompatActivity() {
             base.addView(it)
         }
 
+        ee.yutani.furiganaview.FuriganaView(this).also {
+            val tp = TextPaint()
+            tp.textSize = 36f
+            val text = "　{\uD83D\uDC4F;ぱちぱちぱち}{\uD83D\uDC4F;ぱちぱちぱち}"
+            it.text_set(tp, text, 0, 0)
+            base.addView(it)
+        }
+
         // RubyTextView ( b84330808 / RubyTextView )
         // https://github.com/b84330808/RubyTextView
 
@@ -128,7 +151,7 @@ class MainActivity : AppCompatActivity() {
         })
 
         me.weilunli.views.RubyTextView(this).also {
-            it.combinedText = "Android|アンドロイド は、 Google|グーグル が 開発|かいはつ した 携帯汎用|けいたいはんよう オペレーティングシステムである。"
+            it.combinedText = "Android|アンドロイド は、 Google|グーグル が 開発|かいはつ した 携帯汎用|けいたいはんよう オペレーティングシステムである。{\uD83D\uDE4F;ありがとう}{\uD83D\uDC4F;ぱちぱちぱち}"
             base.addView(it)
         }
 
@@ -139,6 +162,11 @@ class MainActivity : AppCompatActivity() {
 
         me.weilunli.views.RubyTextView(this).also {
             it.combinedText = "あ|あいうえお あ|あいうえお あ|あいうえお あ|あいうえお あ|あいうえお あ|あいうえお あ|あいうえお あ|あいうえお あ|あいうえお あ|あいうえお あ|あいうえお あ|あいうえお あ|あいうえお あ|あいうえお "
+            base.addView(it)
+        }
+
+        me.weilunli.views.RubyTextView(this).also {
+            it.combinedText = "　 \uD83D\uDC4F|ぱちぱちぱち \uD83D\uDC4F|ぱちぱちぱち"
             base.addView(it)
         }
 
@@ -189,13 +217,22 @@ class MainActivity : AppCompatActivity() {
             ssb.setSpan(RubySpan("あいえうお"), 10, 11, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
             ssb.setSpan(RubySpan("あいえうお"), 11, 12, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
             ssb.setSpan(RubySpan("あいえうお"), 12, 13, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
-            //=ssb.setSpan(RubySpan("あいえうお"), 13, 14, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+            //ssb.setSpan(RubySpan("あいえうお"), 13, 14, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
             it.text = ssb
             it.height = 200
             it.gravity = Gravity.CENTER_VERTICAL
             base.addView(it)
         }
 
+        TextView(this).also {
+            val ssb = SpannableStringBuilder("　\uD83D\uDC4F\uD83D\uDC4F")
+            ssb.setSpan(RubySpan("ぱちぱちぱち"), 1, 3, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+            ssb.setSpan(RubySpan("ぱちぱちぱち"), 3, 5, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+            it.text = ssb
+            it.height =64
+            it.gravity = Gravity.BOTTOM
+            base.addView(it)
+        }
 
     }
 }

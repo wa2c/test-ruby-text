@@ -137,7 +137,6 @@ class MainActivity : AppCompatActivity() {
             base.addView(it)
         }
 
-
         me.weilunli.views.RubyTextView(this).also {
             it.combinedText = "あ|あいうえお あ|あいうえお あ|あいうえお あ|あいうえお あ|あいうえお あ|あいうえお あ|あいうえお あ|あいうえお あ|あいうえお あ|あいうえお あ|あいうえお あ|あいうえお あ|あいうえお あ|あいうえお "
             base.addView(it)
@@ -158,8 +157,8 @@ class MainActivity : AppCompatActivity() {
             ssb.setSpan(RubySpan("かいはつ"), 16, 18, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
             ssb.setSpan(RubySpan("けいたいはんよう"), 20, 24, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
             it.text = ssb
-            it.height = 200
-            it.gravity = Gravity.CENTER_VERTICAL
+            it.height = 120
+            it.gravity = Gravity.BOTTOM
             base.addView(it)
         }
 
@@ -170,8 +169,8 @@ class MainActivity : AppCompatActivity() {
             ssb.setSpan(RubySpan("１２３４５６７８"), 12, 14, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
             //ssb.setSpan(RubySpan("12345678"), 14, 16, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
             it.text = ssb
-            it.height = 200
-            it.gravity = Gravity.CENTER_VERTICAL
+            it.height = 64
+            it.gravity = Gravity.BOTTOM
             base.addView(it)
         }
 
@@ -190,7 +189,7 @@ class MainActivity : AppCompatActivity() {
             ssb.setSpan(RubySpan("あいえうお"), 10, 11, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
             ssb.setSpan(RubySpan("あいえうお"), 11, 12, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
             ssb.setSpan(RubySpan("あいえうお"), 12, 13, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
-            ssb.setSpan(RubySpan("あいえうお"), 13, 14, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+            //=ssb.setSpan(RubySpan("あいえうお"), 13, 14, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
             it.text = ssb
             it.height = 200
             it.gravity = Gravity.CENTER_VERTICAL

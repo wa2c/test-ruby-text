@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        >
+
+        <!--
+        <ee.yutani.furiganaview.FuriganaView
+            android:id="@+id/rubyTextView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text=""
+            />
+
+        <com.akira.nguyen.furigana.widget.FuriganaView
+            android:id="@+id/rubyTextView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="" />
+
+        <com.wa2c.testrubytext.FuriganaView
+            android:id="@+id/rubyTextView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="" />
+
+        <se.fekete.furiganatextview.furiganaview.FuriganaTextView
+            android:id="@+id/rubyTextView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="" />
+
+        <me.weilunli.views.RubyTextView
+            android:id="@+id/rubyTextView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="" />
+            -->
+
+        <!--
+            <ee.yutani.furiganaview.FuriganaView
+                android:id="@+id/furiganaView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="furiganaView"
+                />
+
+            <com.akira.nguyen.furigana.widget.FuriganaView
+                android:id="@+id/furiganaView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="com.akira.nguyen.furigana.widget.FuriganaView" />
+
+            <com.wa2c.testrubytext.FuriganaView
+                android:id="@+id/furiganaView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="com.wa2c.testrubytext.FuriganaView" />
+
+            <se.fekete.furiganatextview.furiganaview.FuriganaTextView
+                android:id="@+id/furiganaTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="se.fekete.furiganatextview.furiganaview.FuriganaTextView" />
+
+            <me.weilunli.views.RubyTextView
+                android:id="@+id/rubyTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="me.weilunli.views.RubyTextView" />
+
+                -->
+
+    </LinearLayout>
+
+
+</ScrollView>

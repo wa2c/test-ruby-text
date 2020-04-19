@@ -1,0 +1,2 @@
+rootProject.name='TestRubyText'
+include ':app', ':furiganatextview', ':furigana_lib', ':rubytextview'
